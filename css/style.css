@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.active {
+    color: #ec4899;
+    font-weight: bold;
+}
+
 .nav-item {
     animation: slideIn 0.5s ease-in-out;
 }
