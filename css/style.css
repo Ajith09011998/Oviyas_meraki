@@ -1,0 +1,48 @@
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-item {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+*{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color:black;
+}
+
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faq-answer {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+}
+
+.faq-answer.open {
+    max-height: 100px;
+    /* Adjust based on content */
+    opacity: 1;
+}

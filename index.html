@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oviyas Meraki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-white py-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="./assets/logo.png" alt="logo" width="200" />
+            <!-- Mobile menu button -->
+            <button id="menu-toggle"
+                class="lg:hidden text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <!-- Links container, hidden on mobile -->
+            <div id="menu" class="hidden lg:flex space-x-6 uppercase text-xs items-center">
+                <a href="#home" class="hover:text-[#F43985] transition duration-300">Home</a>
+                <a href="#about" class="hover:text-[#F43985] transition duration-300">Course Overview</a>
+                <a href="#services" class="hover:text-[#F43985] transition duration-300">Bonuses</a>
+                <a href="#contact" class="hover:text-[#F43985] transition duration-300">Testimonials</a>
+                <a href="#contact" class="hover:text-[#F43985] transition duration-300">Testimonials</a>
+                <a href="#contact" class="hover:text-[#F43985] transition duration-300">Why Choose Us</a>
+                <a href="#contact" class="hover:text-[#F43985] transition duration-300">Faq</a>
+                <a href="#contact"
+                    class="bg-[#F43985] text-white px-4 py-2 hover:bg-[#F43985]/90 transition duration-300">Book
+                    Now</a>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="lg:hidden hidden flex-col space-y-2 py-4 px-6 bg-blue-600 text-white">
+            <a href="#home" class="hover:text-[#F43985] transition duration-300">Home</a>
+            <a href="#about" class="hover:text-[#F43985] transition duration-300">Course Overview</a>
+            <a href="#services" class="hover:text-[#F43985] transition duration-300">Bonuses</a>
+            <a href="#contact" class="hover:text-[#F43985] transition duration-300">Testimonials</a>
+            <a href="#contact" class="hover:text-[#F43985] transition duration-300">Testimonials</a>
+            <a href="#contact" class="hover:text-[#F43985] transition duration-300">Why Choose Us</a>
+            <a href="#contact" class="hover:text-[#F43985] transition duration-300">Faq</a>
+            <a href="#contact"
+                class="bg-[#F43985] text-white px-4 py-2 hover:bg-[#F43985]/90 transition duration-300">Book
+                Now</a>
+        </div>
+    </nav>
+
+    <!-- section banner -->
+    <div>
+        <div class="flex flex-col md:flex-row h-screen">
+            <div class="w-full md:w-1/2 bg-pink-100 flex flex-col justify-center items-start container mx-auto px-6">
+                <h1 class="text-black text-2xl font-bold mb-4">Become a</h1>
+                <h2 class="text-black text-4xl md:text-5xl font-bold mb-4 abril-fatface-regular">
+                    High-paying</h2>
+                <h2 class="text-black text-4xl md:text-5xl font-bold mb-4 abril-fatface-regular">
+                    Bridal Makeover</h2>
+                <h2 class="text-black text-4xl md:text-5xl font-bold mb-4 abril-fatface-regular">
+                    Artist</h2>
+                <p class="text-black text-base md:text-lg mb-8 fw-norm">
+                    Become a certified bridal artist with expert guidance in makeup, hairstyling, saree draping, and
+                    more!
+                    Perfect your skills with lifetime access, offline sessions, and a supportive community.
+                </p>
+                <button class="bg-pink-500 text-white text-base font-bold py-3 px-6">
+                    Book Your Seat Now <i class="fas fa-arrow-right ml-2 text-white"></i>
+                </button>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="https://s3-alpha-sig.figma.com/img/9f40/38ee/996cf12caa7063e8c46dea22ae956d00?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FpGVYtZnvCsP8~yDWDgceZVJPZk2GZOUliXbrmUSz1GipJ0jiu1ThoQDQ-4uyhWtdqdCS9jAxngL3Y9fKj~cdjr35ekQOsRBuRKiN16KCL-w~Ymbm0-obErHacebyahZDnyGQAYDr7r2WfH-7627OoZ0C67H1XuQ2kscde2oqQcYvSxPw1LCGKaU9bIfeIfe6honVWbpsMB1BuV16nvfpBxBZuaFtMy6ObrJom6LDpgJbbSGTEsZGvvpGQqCRKKMdLHyfgysjkTVW2kuhhIW129JVbc555P-w3EVqSlBeMFuCbLMszVcKS~Jx2x4ezu5hyULCfOk1O96yd1dOXligA__"
+                    alt="A woman in traditional bridal attire, wearing a red saree and gold jewelry, standing outdoors with a blurred background of trees and buildings."
+                    class="h-full w-full object-cover" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Our master class -->
+
+    <div class="container mx-auto py-24 text-center">
+        <h2 class="text-lg font-medium mb-2">What You'll Learn in</h2>
+        <h1 class="text-4xl font-bold abril-fatface-regular">Our Masterclass</h1>
+        <div class="relative mt-8">
+            <img alt="A person in traditional attire with a red curtain background" class="w-full h-auto" height="400"
+                src="https://s3-alpha-sig.figma.com/img/1a8c/0675/3e291ec5f388cde1c817150553e97865?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pusDOWQFcA5rTFTH2MThfrgCjCJgqU34pV8DgBgkjfIIjTFg9TpWjbdicTKVmic-oTFSC9dh1zD74EV0H-DU70BiJtYO58xu8GSHSnA7IB4iFsinlv1hp0N7xqw8PD0nPTQgXug1PNUV1NvVyY6ME4OKxphwe10PCHY5Ng5hz2SxaKGQpUuVXeTSCIaSbSJT8fQUFzzPHTX~hXEu1trMrm9MCU1EpDfNcsJlSVLW2RjjOTWDqVLf1W3AnZG6j7Ml-U8Jf9S~C40zfKiD2fn-oYxFOV8N2s0PwsBzVXvjR~DT4VD-bnW~kxxn6BBB22tloQGKj1gC8HCRN5IvYV-SNA__"
+                width="800" />
+            <div class="absolute top-10 right-10">
+                <div
+                    class="border-solid border border-white w-[70px] h-[70px] flex items-center justify-center rounded-[50%]">
+                    <i class="fas fa-play text-white"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professional Makeup -->
+
+    <div class="container mx-auto pb-24">
+        <h1 class="text-lg subtitle font-bold">Your Complete Guide to</h1>
+        <h2 class="text-4xl title font-bold mt-2 abril-fatface-regular">Professional Makeup</h2>
+        <p class="text-lg subtitle mt-4">Learn from top professionals and become a bridal makeover expert! Our detailed
+            course includes</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div class="bg-pink-100 p-6">
+                <div class="mb-8">
+                    <img src="./assets/icons/brain.png" alt="brain icon" />
+                </div>
+                <h3 class="text-xl font-bold">MAKEUP SKILLS</h3>
+                <p class="mt-2">Learn HD makeup, airbrush techniques, and special effects makeup.</p>
+            </div>
+            <div class="border border-pink-500 p-6">
+                <div class="mb-8">
+                    <img src="./assets/icons/female.png" alt="female icon" />
+                </div>
+                <h3 class="text-xl font-bold">HAIRSTYLING</h3>
+                <p class="mt-2">Over 50 unique bridal hairstyles</p>
+            </div>
+            <div class="border border-pink-500 p-6">
+                <div class="mb-8">
+                    <img src="./assets/icons/saree.png" alt="saree icon" />
+                </div>
+                <h3 class="text-xl font-bold">SAREE DRAPING</h3>
+                <p class="mt-2">Master 10+ elegant saree draping styles.</p>
+            </div>
+            <div class="border border-pink-500 p-6">
+                <div class="mb-8">
+                    <img src="./assets/icons/flower.png" alt="flower icon" />
+                </div>
+                <h3 class="text-xl font-bold">FLOWER MAKING</h3>
+                <p class="mt-2">Create beautiful floral accessories with 10+ techniques for bridal looks.</p>
+            </div>
+            <div class="border border-pink-500 p-6">
+                <div class="mb-8">
+                    <img src="./assets/icons/art.png" alt="art icon" />
+                </div>
+                <h3 class="text-xl font-bold">NAIL ART</h3>
+                <p class="mt-2">30+ trendy nail art designs.</p>
+            </div>
+            <div class="border border-pink-500 p-6">
+                <div class="mb-8">
+                    <img src="./assets/icons/speaker.png" alt="speaker icon" />
+                </div>
+                <h3 class="text-xl font-bold">SOCIAL MEDIA MARKETING</h3>
+                <p class="mt-2">Learn how to promote yourself and grow your client base online.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bonus section -->
+
+    <div class="bg-[#FFF6E6]">
+        <div class="container mx-auto py-24">
+            <div class="text-center">
+                <h2 class="text-lg font-semibold mb-2">Special Diwali Offer</h2>
+                <h1 class="text-4xl font-bold mb-3 abril-fatface-regular">₹4999 <span class="text-2xl font-normal">+
+                        Bonuses</span> <span class="text-pink-500">Worth ₹10,000</span></h1>
+                <p class="mb-6">Enroll now and unlock these amazing bonuses for FREE</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <!-- Image Side -->
+                <div class="md:w-1/2 h-1/2">
+                    <img src="https://s3-alpha-sig.figma.com/img/628d/3645/8d75a130d1ffdf81f0c17a182b5160a4?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TSb27WrJ14emsMvggjsIl3kPQo4x0wYSgNglgDTe~M0Q0wbxCOmAe9u7XkabMuyN8hM8oAe5ID~7fKuKnndvod67rFM008miUe0kA5wDhzNzxXw2~7IzISzT69WYWeops8uX4sBh1Ei2lKhYpGCGKofdDYTn0xpN1ipKED54K59gu24ovgxb8ti3Mc-nuG8Xs0dReP6haGxxujd-yVMo30Dq1TXuE35kQjupNEzsAhZZ1EGtpfgF7vp7SVREKN8fbwC3waqA3nDtOi3CLuTwlm8nqxFO9Y5CwwJEQuAKUw-xJjhOWLy8BudCRRxAkLbacrokXOmjBXDb5cfWBB-f~A__"
+                        alt="img" />
+                </div>
+
+                <!-- Content Side -->
+                <div class="md:w-1/2">
+                    <div>
+                        <ul class="text-left mb-6 font-bold">
+                            <li class="flex items-center mb-6">
+                                <i class="fas fa-check-circle text-black mr-2"></i>
+                                Lifetime Access to All Course Videos
+                            </li>
+                            <li class="flex items-center mb-6">
+                                <i class="fas fa-check-circle text-black mr-2"></i>
+                                2 Days of Offline Live Training
+                            </li>
+                            <li class="flex items-center mb-6"><i class="fas fa-check-circle text-black mr-2"></i>
+                                WhatsApp Support Group for
+                                Ongoing Help</li>
+                            <li class="flex items-center mb-6"><i class="fas fa-check-circle text-black mr-2"></i>
+                                Exclusive Access to Our
+                                Makeup Artist Community</li>
+                            <li class="flex items-center mb-6"><i class="fas fa-check-circle text-black mr-2"></i>
+                                Certificate Recognized by 7
+                                Departments</li>
+                        </ul>
+                        <button class="bg-pink-500 text-white py-2 px-4 
+                        hover:bg-pink-600 transition duration-300">Book
+                            Now <i class="fas fa-arrow-right ml-2 text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Testimonial -->
+
+    <div class="container mx-auto py-24">
+        <div class="text-center pb-12">
+            <p class="text-gray-500 text-sm">
+                Testimonial
+            </p>
+            <h1 class="text-4xl font-bold mt-2">
+                What Our Students Are Saying
+            </h1>
+        </div>
+        <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 justify-center">
+            <div class="bg-[#F3F6F7] p-6 max-w-sm">
+                <div class="text-pink-500 text-3xl mb-4">
+                    <i class="fas fa-quote-left text-[#F43985]">
+                    </i>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    "This course changed my career! The makeup techniques I learned are exactly what my bridal clients
+                    want."
+                </p>
+                <div class="flex flex-col gap-2">
+                    <img alt="Portrait of Priscilla, London" class="w-10 h-10 rounded-full mr-4 object-cover"
+                        height="100"
+                        src="https://s3-alpha-sig.figma.com/img/c8cc/344e/f513da92e95d87e11dac8f7a2417f750?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XUZpXoBMjNZrKWjkHc0Epp8zb1zYf65rp1p1qVBzzL1iT0o7q4d95iSfw0P3sEYrlJ9mJ6Y0vUGK8Yhw4CdHlgF3p2p~gWLaxKZySPTpboCm8Fu1E~wWCQa8T6u35jQdHLPn-QkJxRqGpyLspCts6nwkX4WsX69unm8gFTxLnazxcwZyIwkiKfxTOFsO4CwXhfGHSrZNMT5iyIDDyfx0AnWSFSUgp8EjYAoAiexrSyEqaEgkM5~lG6XMpF0phWDLbheFw36ny3ZQTiArkpluT6q-JGPyiAPEjvZk3tTFsSebj~EeENranfXQIYCPnT3KzLomDCEYt8oZQIGNzV8nEA__"
+                        width="100" />
+                    <div>
+                        <p class="text-[#67646A] font-medium">
+                            Priscilla, London
+                        </p>
+                        <p class="text-[#413D45] text-sm font-medium">
+                            Freelance Makeup Artist
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white border border-[#E5E5E5] p-6 max-w-sm">
+                <div class="text-pink-500 text-3xl mb-4">
+                    <i class="fas fa-quote-left text-[#F43985]">
+                    </i>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    "I've added new services to my salon and have already seen more bridal bookings after finishing this
+                    course!"
+                </p>
+                <div class="flex flex-col gap-2">
+                    <img alt="Portrait of Swetha, Madurai" class="w-10 h-10 rounded-full mr-4 object-cover" height="100"
+                        src="https://s3-alpha-sig.figma.com/img/f1bf/3ce8/e889995dabe856133244cc47dc005ceb?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X1-xCsaIedWAN4AK741wcH6lKU58g6DAUED5-q0uiVGmbeGPahWFqy5e2qaQFOnmoP9XfTKXLjTaM71GPt34Np0gR9mik~OjIVZ9sNRVzkH4~jd7aPMw0ViXSAfPWn1phR3v8USBB62CJpVzVh2k5jcZENlhnT0t-ea~kee1h~44kFH3YtqMVYZTn~PBX5hmS7k~C60G9tfDMkYE65NToEabMtLMafC41KhU9ElvGESeAp4ms0PgP9J6p8fJihtNJJX9tyJ057a0VafeVr0RerrlAaK3FsLin29S1h8614uNAlLBCypxALpZOTu1KIsJqU96cpnYuTxWRc3pz8pnzg__"
+                        width="100" />
+                    <div>
+                        <p class="text-[#67646A] font-medium">
+                            Swetha, Madurai
+                        </p>
+                        <p class="text-[#413D45] text-sm font-medium">
+                            Salon Owner
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F3F6F7] p-6 max-w-sm">
+                <div class="text-pink-500 text-3xl mb-4">
+                    <i class="fas fa-quote-left text-[#F43985]">
+                    </i>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    "I never thought I could become a makeup artist. The support and training gave me the confidence to
+                    start my own business!"
+                </p>
+                <div class="flex flex-col gap-2">
+                    <img alt="Portrait of Meera, Pondicherry" class="w-10 h-10 rounded-full mr-4 object-cover"
+                        height="100"
+                        src="https://s3-alpha-sig.figma.com/img/d150/e507/37b8d0a7ca19495a18c48242efb49e1e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OL1hBbeQb8~S5LLq92mkbxu70P~UzaoXU5yTc~mUHOdDVKVP9Yk7h4oRkBpoNu-K5ptNSE0bTsuKJCPOdCUH20qtT3eJ7aSZ83H2vEthx8S9Gbel7t-jfWqZ2olUMnvtQs0yfM1q7jUEH5~4m-Zwa11ls2ESjv~sAHoR7AsWg0pv1KBX9oUjtKwoURn~8qvL7cb2~BPUGAbGhhzMGx3sWzl7GVkJpOmoQ7XXx5~bCFTdVYWYxoJjrad~MGWUCwwyFc~G9IS6EJ5nX9LddVPJ8Llsy7pszpfXUsJ~o6OyXH6JadLwV3qvrk2Mv6redO4bq7sH9ki~u9ppXMdRh9JWgQ__"
+                        width="100" />
+                    <div>
+                        <p class="text-[#67646A] font-medium">
+                            Meera, Pondicherry
+                        </p>
+                        <p class="text-[#413D45] text-sm font-medium">
+                            Homemaker turned Makeup Artist
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 px-4">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg max-w-sm mx-auto">
+                <div class="text-pink-500 text-3xl mb-4">
+                    <i class="fas fa-quote-left">
+                    </i>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    "This course changed my career! The makeup techniques I learned are exactly what my bridal clients
+                    want."
+                </p>
+                <div class="flex items-center">
+                    <img alt="Portrait of Priscilla, London" class="w-10 h-10 rounded-full mr-4" height="100"
+                        src="https://storage.googleapis.com/a1aa/image/LmLRyk0hpuY6OZTpvNfBf41CaGtnvHxsN8JjeeoLDbSazmrOB.jpg"
+                        width="100" />
+                    <div>
+                        <p class="text-gray-900 font-bold">
+                            Priscilla, London
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            Freelance Makeup Artist
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm mx-auto">
+                <div class="text-pink-500 text-3xl mb-4">
+                    <i class="fas fa-quote-left">
+                    </i>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    "I've added new services to my salon and have already seen more bridal bookings after finishing this
+                    course!"
+                </p>
+                <div class="flex items-center">
+                    <img alt="Portrait of Swetha, Madurai" class="w-10 h-10 rounded-full mr-4" height="100"
+                        src="https://storage.googleapis.com/a1aa/image/i4ZurS1jAeQXcqUs5k2h1bMDKqzk5wpkQftIQACul4X1s5qTA.jpg"
+                        width="100" />
+                    <div>
+                        <p class="text-gray-900 font-bold">
+                            Swetha, Madurai
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            Salon Owner
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg max-w-sm mx-auto">
+                <div class="text-pink-500 text-3xl mb-4">
+                    <i class="fas fa-quote-left">
+                    </i>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    "I never thought I could become a makeup artist. The support and training gave me the confidence to
+                    start my own business!"
+                </p>
+                <div class="flex items-center">
+                    <img alt="Portrait of Meera, Pondicherry" class="w-10 h-10 rounded-full mr-4" height="100"
+                        src="https://storage.googleapis.com/a1aa/image/wJn7sWRn9N4BBFkEgiaFrxkREwU40CaaivyaqAfZUwXc2c1JA.jpg"
+                        width="100" />
+                    <div>
+                        <p class="text-gray-900 font-bold">
+                            Meera, Pondicherry
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            Homemaker turned Makeup Artist
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Bridal Masterclass -->
+
+    <div class="bg-[#FFF0F6] py-24">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold text-pink-600 abril-fatface-regular">
+                Why This Bridal Masterclass
+            </h1>
+            <h2 class="text-3xl font-bold text-black mt-2 abril-fatface-regular">
+                Is Perfect for You
+            </h2>
+            <div class="flex flex-col md:flex-row mt-10 gap-20">
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <img alt="A laptop showing a video call with a woman holding makeup products"
+                            src="https://s3-alpha-sig.figma.com/img/1919/f902/3259282a0b434ad390d2e7aecb3b04ed?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lydUAYfTjnb2KX1XP5nKbbATSq0Qek6JZXgjcdbjQAS3woX3La6JlSZqHqsnrFG54inajfTkpQvaB7BsC7xbonoKteBugsrK4TNZCA7bex-ptnkLtabwqca8Hz7H39pacBEXwJHRqXsDJbYa8nzgaacqnQszyMMuum0nae9dKzCrHJHQ08RGyBJc-Wvh0cAwiQaAwSAAbM6BBryvG87Hf2WKNnTUXeUNmQ-~KYlproh~nl8NS-gDz2r~F0-1cfV83FVCh2mVlGkF5NpudQRE3hWndr1EGXNzzMKzHHeBrbc3HOvC5q-cv4j8~kUCapge3VPMCw3qgEMFNPbtqjAyIA__"
+                            class="relative h-[650px] object-cover" width="100%" />
+                        <div class="absolute top-[-30px] right-[-10px] transform rotate-[-10deg]">
+                            <img width="60"
+                                src="https://s3-alpha-sig.figma.com/img/1e76/8baf/eb762e6ebcc06df1d8e10caf2c22d5cf?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FhPWn5y4SdBjMa3q2hQI5n8Kw3x5qGfxhQ~v53ojEL6mIAsuBb9lYOddjjJ9jNCdTkptrdYflAwoFKVbxAvUo010LY-5F-0FIWIuIghYOcAb2ctUkyI0muBbVD5iPkZb3wc0~2Fa030uIeMp6cTVduGZGRcEdbHTEBWApIkCV~Ata1QhHRspUXxG5iV2eXf9J9zcOI9MzZjQBqpTCJ6wg9xd7FlqGTD-9usR2DZJ8s6CcVlOp7DI5xzcelJRHZ2pGeg-ntZWMNq9QGkrQCVuIMWxD1iq1m8W4mRdqUpcx~Zin--zPeNzrhdA-MIDhpdsMrmNuFMeMYLZwxFSq4ElXQ__" />
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex flex-col justify-between">
+                    <p class="text-lg">
+                        Here's why our students love this course:
+                    </p>
+                    <p class="text-lg font-bold mt-2">
+                        Trained 2200+ students in 7 departments, a Team of 10+ professionals, and 10+ years of makeover
+                        industry experience.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8">
+                        <div class="flex flex-col gap-3">
+                            <div
+                                class="p-4 w-[50px] h-[50px] flex items-center justify-center border border-pink-500 rounded-md">
+                                <i class="fas fa-star text-pink-600 text-md">
+                                </i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-3">
+                                    Learn from Experts
+                                </h3>
+                                <p>
+                                    Our instructors are experienced professionals in the bridal industry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div
+                                class="p-4 w-[50px] h-[50px] flex items-center justify-center border border-pink-500 rounded-md">
+                                <i class="fas fa-sync-alt text-pink-600 text-lg">
+                                </i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-3">
+                                    Flexible Learning
+                                </h3>
+                                <p>
+                                    Access all course videos for life and learn at your own pace.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div
+                                class="p-4 w-[50px] h-[50px] flex items-center justify-center border border-pink-500 rounded-md">
+                                <i class="fas fa-hands text-pink-600 text-lg">
+                                </i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-3">
+                                    Practical Experience
+                                </h3>
+                                <p>
+                                    Hands-on training with a free practice kit through offline live sessions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div
+                                class="p-4 w-[50px] h-[50px] flex items-center justify-center border border-pink-500 rounded-md">
+                                <i class="fas fa-users text-pink-600 text-lg">
+                                </i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-3">
+                                    Supportive Community
+                                </h3>
+                                <p>
+                                    Connect with other makeup artists and grow together.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-pink-600 text-white py-2 px-4 mt-8">
+                            Book Now
+                            <i class="fas fa-arrow-right ml-2 text-white">
+                            </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Masterclass -->
+
+    <div class="container mx-auto pt-24 text-center">
+        <h1 class="text-lg">Teaser of</h1>
+        <h2 class="text-3xl abril-fatface-regular font-bold mb-10">Our Masterclass</h2>
+        <div id="content" class="flex space-x-10 justify-center">
+            <div class="w-80 relative">
+                <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
+                    src="https://s3-alpha-sig.figma.com/img/1ad5/6bfb/f1132fc1fb17f8c20c69e5be419a6a84?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PJHoh2zTQWBn8AcYbgxfPjENJjwrB4sTeAaQrwFynBXiMvsuVy1pa3Ou9TRmFrb~ZZsgH2aFV2k8vgjro8qJDXU1Wd3GfUpOrvwEKqwr37m2ptD6gfl8j0O9q3Jb7d4eHmheBz9zlLKTvbATiBQM2j6yqr-9Xjc3WqLwxhq-UdKBghS4FCKO9R9wK1mzyIp1PUpz19usirlqlOEMUkJt8RccIprZ006IMyxrkkT~BmXTf5tNowqgC-8Fh1HukI0WgtbIzefB51dTMKzldH5PwcIMmoG5A63tJNdxh3j3Rtz8fT-f-gfk1HZmqlzoIp9pgK~1sCLNLoPko2dR0awREw__" />
+            </div>
+            <div class="w-80 relative">
+                <img alt="Woman in traditional attire dancing" class="w-full h-auto"
+                    src="https://s3-alpha-sig.figma.com/img/5ea5/6c65/952e212f2f5ee2a33e5b3dfcdb247901?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fOCirkkDsZOg0bRXP~lIh4A~WHWiqbbYhNj9zZ-ELVTK9mIT8I~4-Ety~rq87v-2wwtibi-nH-s-MibUmehduF8PEbD9p3kqFb-ivyrPkGFcQCY3FxL~euHQPN2wgJ810BDDW-7Mgi5F-gWJaIdgVs~L1IuexYc1JskestDx~uMQtmKCYbn54Lk47U3HnPKmaq-glxQ91LeDHrMrNP4-vj-q76VuxiwJjMzhho8C~jLcJEnyFndwHGsP~V50l4zQvWoyXgqIldp2yZZiz6uS5Ut8DDy-yt~~8Z7clUYu4fkctAFduIycvtAC9tnlK4hLzOox7vBpGJ4LiSm6VuUKww__" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <i class="fas fa-play text-white text-4xl cursor-pointer" onclick="openModal('video1')"></i>
+                </div>
+            </div>
+            <div class="w-80 relative">
+                <img alt="Woman in traditional attire behind leaves" class="w-full h-auto"
+                    src="https://s3-alpha-sig.figma.com/img/302a/b7e0/f0fc176d20a9fb0ceee3cb3820adc84d?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hCRKE34Ztb3JYFjJqa-xGjdm7pnHNUkWu3~LYKGNn0nDF9o~tlwC9SezAy-WLwjurfHMntxqsF0bxuuNKtddG9OpGKJ6xfF60xwq2FNhoIk-L2Ayvw6koNuFncPlz3fomaCa1iQPw3IAlJUx2aJT-9W7p3FOpqxwR6mmfxTzA7D7AuQlOP2LYmUh8fQyo6lKsNC~1mMMEeMQiOY~AZTkpplkPB5ExZBVfgyQeaVqgZlhkkUS-6izpFepOA8WM0LA9zi7W55SlHvNI84isX4MyYIX0gnDEqLAZZZ0qCON070xsqs1mwrU73YnDXMAFcIIGParO7InQo9yoCsdv4cyuQ__" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <i class="fas fa-play text-white text-4xl cursor-pointer" onclick="openModal('video2')"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex 
+        z-[99] items-center justify-center hidden" onclick="closeModal(event)">
+            <div class="bg-white relative" onclick="event.stopPropagation()">
+                <i class="fas fa-times absolute top-2 right-2 text-2xl cursor-pointer z-[9999] h-[40px] w-[40px] flex items-center justify-center bg-pink-600 text-white rounded-full"
+                    onclick="closeModal()"></i>
+                <video id="video1" class="hidden" width="640" height="360" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video id="video2" class="hidden" width="640" height="360" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Faq Section -->
+
+    <div class="container mx-auto py-24">
+        <div class="w-full max-w-4xl mx-auto">
+            <h1 class="text-3xl faq-title text-center mb-8 abril-fatface-regular">Frequently Asked Questions</h1>
+            <div class="border-b border-gray-300 py-4">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(0)">
+                    <h2 class="text-lg font-semibold">When does the course begin?</h2>
+                    <i class="fas fa-times" id="icon-0"></i>
+                </div>
+                <p class="text-gray-500 mt-2 faq-answer open" id="answer-0">The course starts on November 3, but you’ll
+                    have
+                    lifetime access to the videos, so you can start anytime!</p>
+            </div>
+            <div class="border-b border-gray-300 py-4">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(1)">
+                    <h2 class="text-lg font-semibold">How much does the course cost?</h2>
+                    <i class="fas fa-plus" id="icon-1"></i>
+                </div>
+                <p class="text-gray-500 mt-2 faq-answer" id="answer-1">The course costs $299.</p>
+            </div>
+            <div class="border-b border-gray-300 py-4">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(2)">
+                    <h2 class="text-lg font-semibold">Will I receive a certificate?</h2>
+                    <i class="fas fa-plus" id="icon-2"></i>
+                </div>
+                <p class="text-gray-500 mt-2 faq-answer" id="answer-2">Yes, you will receive a certificate upon
+                    completion
+                    of the course.</p>
+            </div>
+            <div class="border-b border-gray-300 py-4">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(3)">
+                    <h2 class="text-lg font-semibold">Is the offline training included in the price?</h2>
+                    <i class="fas fa-plus" id="icon-3"></i>
+                </div>
+                <p class="text-gray-500 mt-2 faq-answer" id="answer-3">No, the offline training is not included in the
+                    price.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-pink-500 text-center py-16 container mx-auto relative z-[9]">
+        <h1 class="text-3xl text-white font-bold mb-4 abril-fatface-regular">Ready to Become a Certified Bridal
+            Artist?<br>Book
+            Your Seat Today!</h1>
+        <p class="mb-6 text-white">Join now and get expert training, lifetime access, and hands-on practice. The journey
+            <br>to becoming a professional bridal artist starts here!
+        </p>
+        <button class="bg-white text-black font-bold py-2 px-6 rounded-md"
+            style="background: linear-gradient(180deg, #FFFFFF 66.35%, #B37979 119.79%);">
+            Book Now <i class="fas fa-paper-plane ml-2">
+            </i></button>
+    </div>
+    <div class="bg-[#F3EFDF]">
+        <div class="container mx-auto pb-16 pt-[200px] mt-[-100px]">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h2 class="font-bold mb-5">LINKS</h2>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-black font-medium">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-black font-medium">Course Overview</a></li>
+                        <li class="mb-2"><a href="#" class="text-black font-medium">Bonuses</a></li>
+                        <li class="mb-2"><a href="#" class="text-black font-medium">Testimonials</a></li>
+                        <li class="mb-2"><a href="#" class="text-black font-medium">Why Choose Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-black font-medium">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-bold mb-5">CONTACT</h2>
+                    <div class="flex flex-col gap-3">
+                        <p class="mb-2 font-medium"><i class="fas fa-phone-alt"></i> +9 19999744703</p>
+                        <p class="mb-2 font-medium"><i class="fas fa-map-marker-alt"></i> F-17, Sector-6, Noida, Gautam
+                            Buddha Nagar,
+                            Uttar
+                            Pradesh – 201301</p>
+                        <p class="mb-2 font-medium"><i class="fas fa-envelope"></i> info@motherorganic.in</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-bold mb-5">SOCIAL MEDIA</h2>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-black"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-black"><i class="fab fa-facebook fa-2x"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-bold mb-5">WHATSAPP INQUIRY</h2>
+                    <button class="bg-green-500 font-semibold py-2 px-6 rounded-md flex items-center space-x-2">
+                        <i class="fab fa-whatsapp text-white"></i>
+                        <span class="text-white">WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer class="bg-blue-600 text-white py-4 text-center">
+        <p class="text-sm">© 2023 My Website. All rights reserved.</p>
+    </footer> -->
+
+    <script>
+        // JavaScript to toggle the mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Faq Script -->
+
+    <script>
+        let currentOpenIndex = 0;
+
+        function toggleFaq(index) {
+            const currentAnswer = document.getElementById(`answer-${currentOpenIndex}`);
+            const currentIcon = document.getElementById(`icon-${currentOpenIndex}`);
+            const newAnswer = document.getElementById(`answer-${index}`);
+            const newIcon = document.getElementById(`icon-${index}`);
+
+            if (currentOpenIndex !== index) {
+                currentAnswer.classList.remove('open');
+                currentIcon.classList.remove('fa-times');
+                currentIcon.classList.add('fa-plus');
+            }
+
+            if (newAnswer.classList.contains('open')) {
+                newAnswer.classList.remove('open');
+                newIcon.classList.remove('fa-times');
+                newIcon.classList.add('fa-plus');
+            } else {
+                newAnswer.classList.add('open');
+                newIcon.classList.remove('fa-plus');
+                newIcon.classList.add('fa-times');
+                currentOpenIndex = index;
+            }
+        }
+    </script>
+
+    <!-- Video Script -->
+    <script>
+        function openModal(videoId) {
+            document.getElementById('modal').classList.remove('hidden');
+            document.getElementById(videoId).classList.remove('hidden');
+            document.getElementById(videoId).play();
+        }
+
+        function closeModal(event) {
+            if (event) {
+                event.stopPropagation();
+            }
+            document.getElementById('modal').classList.add('hidden');
+            document.querySelectorAll('video').forEach(video => {
+                video.pause();
+                video.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+
+</html>
