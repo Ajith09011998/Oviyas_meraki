@@ -15,9 +15,12 @@ html {
 *{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     color:black;
+}
+
+button{
+    font-family: "Inter", sans-serif !important;
 }
 
 .abril-fatface-regular {
@@ -50,4 +53,17 @@ html {
     max-height: 100px;
     /* Adjust based on content */
     opacity: 1;
+}
+
+.opactity-bg{
+    background-image:url("../assets/opactity-bg.png")
+}
+
+.shadow-m{
+    box-shadow: 0px 24px 44px 0px #00000012;
+}
+
+.footer-bg{
+    background-image:url("../assets/footer-bg.png");
+    background-size:100% 100%;
 }
