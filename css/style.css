@@ -29,6 +29,9 @@ button{
   font-style: normal;
 }
 
+.active {
+    border-bottom: 3px solid #D31871;
+}
 
 @keyframes slideIn {
     from {
@@ -66,4 +69,8 @@ button{
 .footer-bg{
     background-image:url("../assets/footer-bg.png");
     background-size:100% 100%;
+}
+
+.header-hg{
+    height:calc(100vh - 70px);
 }

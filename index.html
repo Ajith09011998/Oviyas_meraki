@@ -17,62 +17,63 @@
 </head>
 
 <body>
+
     <header class="bg-white fixed w-full z-10" id="header">
         <div class="flex items-center justify-between py-4 px-5 lg:px-[40px]">
-            <div class="flex w-1/2 items-center">
+            <div class="flex items-center">
                 <img src="./assets/logo.png" alt="logo" class="w-[100px] lg:w-[150px]" />
             </div>
-            <nav class="hidden w-1/2 md:flex text-[10px] lg:text-[10px] 
-            items-center justify-between space-x-2 lg:space-x-6">
-                <a class="text-black" href="#section1">
-                    HOME
+            <nav class="hidden md:flex
+                    items-center justify-between space-x-2 lg:space-x-6">
+                <a class="text-black active" href="#home">
+                    <div class="pb-[5px] text-[13px] font-[600] uppercase">Home</div>
                 </a>
-                <a class="text-black" href="#section2">
-                    COURSE OVERVIEW
+                <a class="text-black" href="#course-overview">
+                    <div class="pb-[5px] text-[13px] font-[600] uppercase">COURSE OVERVIEW</div>
                 </a>
-                <a class="text-black" href="#section3">
-                    BONUSES
+                <a class="text-black" href="#bonuses">
+                    <div class="pb-[5px] text-[13px] font-[600] uppercase">BONUSES</div>
                 </a>
-                <a class="text-black" href="#section4">
-                    TESTIMONIALS
+                <a class="text-black" href="#testimonials">
+                    <div class="pb-[5px] text-[13px] font-[600] uppercase">TESTIMONIALS</div>
                 </a>
-                <a class="text-black" href="#section5">
-                    WHY CHOOSE US
+                <a class="text-black" href="#why-choose-us">
+                    <div class="pb-[5px] text-[13px] font-[600] uppercase">WHY CHOOSE US</div>
                 </a>
-                <a class="text-black" href="#section6">
-                    FAQ
+                <a class="text-black" href="#faq">
+                    <div class="pb-[5px] text-[13px] font-[600] uppercase">FAQ</div>
                 </a>
-                <a class="bg-pink-500 text-white font-bold py-2 px-4" href="#">
+                <a class="bg-pink-500 text-white text-[13px] font-[600] py-2 px-4" href="#">
                     Book Now
                 </a>
             </nav>
             <div class="md:hidden">
                 <button class="text-black focus:outline-none" id="menu-button">
-                    <i class="fas fa-bars fa-2x" id="menu-icon">
+                    <i class="fas fa-bars fa-1x" id="menu-icon">
                     </i>
-                    <i class="fas fa-times fa-2x hidden" id="close-icon">
+                    <i class="fas fa-times fa-1x hidden" id="close-icon">
                     </i>
                 </button>
             </div>
         </div>
         <div class="md:hidden" id="mobile-menu" style="display: none;">
             <nav class="flex flex-col items-center text-xs space-y-4 py-4">
-                <a class="text-black font-bold" href="#section1">
+                <a class="text-black font-bold" href="#home">
                     HOME
                 </a>
-                <a class="text-black" href="#section2">
+                <a class="text-black" href="#course-overview">
                     COURSE OVERVIEW
                 </a>
-                <a class="text-black" href="#section3">
+                <a class="text-black" href="#bonuses">
                     BONUSES
                 </a>
-                <a class="text-black" href="#section4">
+                <a class="text-black" href="#testimonials">
                     TESTIMONIALS
                 </a>
-                <a class="text-black" href="#section5">
+                <a class="text-black" href="#why-choose-us">
                     WHY CHOOSE US
                 </a>
-                <a class="text-black" href="#section6">
+                <a class="text-black" href="#faq">
                     FAQ
                 </a>
                 <a class="bg-pink-500 text-white font-bold py-2 px-4" href="#">
@@ -82,143 +83,136 @@
         </div>
     </header>
 
-    <!-- section banner -->
-
-    <div class="pt-[70px]">
-        <div class="flex flex-col md:flex-row bg-pink-100">
-            <div class="w-full md:w-1/2 bg-pink-100 flex flex-col justify-center 
-                        items-start">
-                <div class="w-full p-5 lg:[p-0] lg:w-[420px] m-auto">
-                    <h1 class="text-black text-[18px] font-[600] mb-4">Become a</h1>
-                    <h2 class="text-black text-3xl lg:text-5xl font-[400] mb-4 abril-fatface-regular">
-                        High-paying</h2>
-                    <h2 class="text-black text-3xl lg:text-5xl font-[400] mb-4 abril-fatface-regular">
-                        Bridal Makeover</h2>
-                    <h2 class="text-black text-3xl lg:text-5xl font-[400] mb-4 abril-fatface-regular">
-                        Artist</h2>
-                    <p class="text-black text-[14px] font-[400] mb-8 fw-norm">
-                        Become a certified bridal artist with expert guidance in makeup, hairstyling, saree draping, and
-                        more!
-                        Perfect your skills with lifetime access, offline sessions, and a supportive community.
-                    </p>
-                    <button class="bg-[#F43985] font-[600] px-[22px] py-[12px]">
-                        <div class="flex flex-row items-center gap-[13px]">
-                            <span class="text-white text-[12px]">Book Your Seat Now</span>
-                            <img src="./assets/icons/btn-arrow.svg" class="w-[13px] h-[9px]" />
-                        </div>
-                    </button>
+    <section id="home">
+        <div class="pt-[70px]">
+            <div class="flex flex-col header-hg md:flex-row bg-pink-100">
+                <div class="w-full md:w-1/2 bg-pink-100 flex flex-col justify-center 
+                                items-start">
+                    <div class="w-full p-5 lg:[p-0] lg:w-[420px] m-auto">
+                        <h1 class="text-black text-[18px] font-[600] mb-4">Become a</h1>
+                        <h2 class="text-black text-3xl lg:text-5xl font-[400] mb-4 abril-fatface-regular">
+                            High-paying</h2>
+                        <h2 class="text-black text-3xl lg:text-5xl font-[400] mb-4 abril-fatface-regular">
+                            Bridal Makeover</h2>
+                        <h2 class="text-black text-3xl lg:text-5xl font-[400] mb-4 abril-fatface-regular">
+                            Artist</h2>
+                        <p class="text-black text-[14px] font-[400] mb-8 fw-norm">
+                            Become a certified bridal artist with expert guidance in makeup, hairstyling, saree draping,
+                            and
+                            more!
+                            Perfect your skills with lifetime access, offline sessions, and a supportive community.
+                        </p>
+                        <button class="bg-[#F43985] font-[600] px-[22px] py-[12px]">
+                            <div class="flex flex-row items-center gap-[13px]">
+                                <span class="text-white text-[14px]">Book Your Seat Now</span>
+                                <img src="./assets/icons/btn-arrow.svg" class="w-[13px] h-[9px]" />
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 hidden md:block">
+                    <img src="./assets/header.png"
+                        alt="A woman in traditional bridal attire, wearing a red saree and gold jewelry, standing outdoors with a blurred background of trees and buildings."
+                        class="h-full w-full object-cover object-top" />
                 </div>
             </div>
-            <div class="w-full md:w-1/2 hidden md:block">
-                <img src="https://s3-alpha-sig.figma.com/img/9f40/38ee/996cf12caa7063e8c46dea22ae956d00?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FpGVYtZnvCsP8~yDWDgceZVJPZk2GZOUliXbrmUSz1GipJ0jiu1ThoQDQ-4uyhWtdqdCS9jAxngL3Y9fKj~cdjr35ekQOsRBuRKiN16KCL-w~Ymbm0-obErHacebyahZDnyGQAYDr7r2WfH-7627OoZ0C67H1XuQ2kscde2oqQcYvSxPw1LCGKaU9bIfeIfe6honVWbpsMB1BuV16nvfpBxBZuaFtMy6ObrJom6LDpgJbbSGTEsZGvvpGQqCRKKMdLHyfgysjkTVW2kuhhIW129JVbc555P-w3EVqSlBeMFuCbLMszVcKS~Jx2x4ezu5hyULCfOk1O96yd1dOXligA__"
-                    alt="A woman in traditional bridal attire, wearing a red saree and gold jewelry, standing outdoors with a blurred background of trees and buildings."
-                    class="h-full w-full object-cover" />
-            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Our master class -->
-
-    <div class="py-10 lg:py-[110px] text-center px-5 lg:px-[150px]">
-        <h2 class="text-lg font-medium mb-2">What You'll Learn in</h2>
-        <h1 class="text-4xl font-bold abril-fatface-regular">Our Masterclass</h1>
-        <div class="relative mt-8">
-            <img alt="A person in traditional attire with a red curtain background" class="w-full h-auto" height="400"
-                src="https://s3-alpha-sig.figma.com/img/1a8c/0675/3e291ec5f388cde1c817150553e97865?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pusDOWQFcA5rTFTH2MThfrgCjCJgqU34pV8DgBgkjfIIjTFg9TpWjbdicTKVmic-oTFSC9dh1zD74EV0H-DU70BiJtYO58xu8GSHSnA7IB4iFsinlv1hp0N7xqw8PD0nPTQgXug1PNUV1NvVyY6ME4OKxphwe10PCHY5Ng5hz2SxaKGQpUuVXeTSCIaSbSJT8fQUFzzPHTX~hXEu1trMrm9MCU1EpDfNcsJlSVLW2RjjOTWDqVLf1W3AnZG6j7Ml-U8Jf9S~C40zfKiD2fn-oYxFOV8N2s0PwsBzVXvjR~DT4VD-bnW~kxxn6BBB22tloQGKj1gC8HCRN5IvYV-SNA__"
-                width="800" />
-            <div class="absolute top-10 right-10">
-                <div
-                    class="border-solid border border-white w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] flex items-center justify-center rounded-[50%]">
-                    <i class="fas fa-play text-white"></i>
-                </div>
+    <section id="home">
+        <div class="pt-10 lg:pt-[110px] text-center px-5 lg:px-[150px]">
+            <h2 class="text-lg font-medium mb-2">What You'll Learn in</h2>
+            <h1 class="text-5xl font-[400] abril-fatface-regular">Our Masterclass</h1>
+            <div class="mt-12 cursor-pointer" onclick="openModal('video1')">
+                <img alt="A person in traditional attire with a red curtain background" class="w-full h-auto"
+                    height="400" src="./assets/our_masterclass.png" width="800" />
             </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Professional Makeup -->
-
-    <div class="px-5 lg:px-[150px] pb-10 lg:pb-[110px]">
-        <h1 class="text-[16px] subtitle font-bold">Your Complete Guide to</h1>
-        <h2 class="text-4xl title font-[400] mt-2 abril-fatface-regular">Professional Makeup</h2>
-        <p class="text-[14px] font-[400] subtitle mt-4">Learn from top professionals and become a bridal makeover
-            expert! Our detailed course includes</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
-            <div class="opactity-bg py-[40px] px-[30px]">
-                <div class="mb-5">
-                    <img src="./assets/icons/brain.svg" width="35" alt=" brain icon" />
+    <section id="course-overview">
+        <div class="px-5 lg:px-[150px] py-10 lg:py-[110px]">
+            <h1 class="text-[16px] subtitle font-bold">Your Complete Guide to</h1>
+            <h2 class="text-5xl title font-[400] mt-2 abril-fatface-regular">Professional Makeup</h2>
+            <p class="text-[16px] font-[400] subtitle mt-4">Learn from top professionals and become a bridal makeover
+                expert! Our detailed course includes</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
+                <div class="opactity-bg py-[40px] px-[30px]">
+                    <div class="mb-5">
+                        <img src="./assets/icons/brain.svg" width="35" alt=" brain icon" />
+                    </div>
+                    <h3 class="text-[16px] font-bold">MAKEUP SKILLS</h3>
+                    <p class="mt-2 text-[14px]">Learn HD makeup, airbrush techniques, and special effects makeup.</p>
                 </div>
-                <h3 class="text-[14px] font-bold">MAKEUP SKILLS</h3>
-                <p class="mt-2 text-[12px]">Learn HD makeup, airbrush techniques, and special effects makeup.</p>
-            </div>
-            <div class="border border-[#F43985] py-[40px] px-[30px]">
-                <div class="mb-5">
-                    <img src="./assets/icons/female.svg" width="35" alt=" brain icon" />
+                <div class="border border-[#F43985] py-[40px] px-[30px]">
+                    <div class="mb-5">
+                        <img src="./assets/icons/female.svg" width="35" alt=" brain icon" />
+                    </div>
+                    <h3 class="text-[16px] font-bold uppercase">Hairstyling</h3>
+                    <p class="mt-2 text-[14px]">Over 50 unique bridal hairstyles</p>
                 </div>
-                <h3 class="text-[14px] font-bold uppercase">Hairstyling</h3>
-                <p class="mt-2 text-[12px]">Over 50 unique bridal hairstyles</p>
-            </div>
-            <div class="border border-[#F43985] py-[40px] px-[30px]">
-                <div class="mb-5">
-                    <img src="./assets/icons/saree.svg" width="35" alt=" brain icon" />
+                <div class="border border-[#F43985] py-[40px] px-[30px]">
+                    <div class="mb-5">
+                        <img src="./assets/icons/saree.svg" width="20" alt=" brain icon" />
+                    </div>
+                    <h3 class="text-[16px] font-bold uppercase">Saree Draping</h3>
+                    <p class="mt-2 text-[14px]">Master 10+ elegant saree draping styles.</p>
                 </div>
-                <h3 class="text-[14px] font-bold uppercase">Saree Draping</h3>
-                <p class="mt-2 text-[12px]">Master 10+ elegant saree draping styles.</p>
-            </div>
-            <div class="border border-[#F43985] py-[40px] px-[30px]">
-                <div class="mb-5">
-                    <img src="./assets/icons/flower.svg" width="35" alt=" brain icon" />
+                <div class="border border-[#F43985] py-[40px] px-[30px]">
+                    <div class="mb-5">
+                        <img src="./assets/icons/flower.svg" width="35" alt=" brain icon" />
+                    </div>
+                    <h3 class="text-[16px] font-bold uppercase">Flower Making</h3>
+                    <p class="mt-2 text-[14px]">Create beautiful floral accessories with 10+ techniques for bridal
+                        looks. 
+                    </p>
                 </div>
-                <h3 class="text-[14px] font-bold uppercase">Flower Making</h3>
-                <p class="mt-2 text-[12px]">Create beautiful floral accessories with 10+ techniques for bridal looks. 
-                </p>
-            </div>
-            <div class="border border-[#F43985] py-[40px] px-[30px]">
-                <div class="mb-5">
-                    <img src="./assets/icons/art.svg" width="35" alt=" brain icon" />
+                <div class="border border-[#F43985] py-[40px] px-[30px]">
+                    <div class="mb-5">
+                        <img src="./assets/icons/art.svg" width="35" alt=" brain icon" />
+                    </div>
+                    <h3 class="text-[16px] font-bold uppercase">Nail Art</h3>
+                    <p class="mt-2 text-[14px]">
+                        30+ trendy nail art designs.
+                    </p>
                 </div>
-                <h3 class="text-[14px] font-bold uppercase">Nail Art</h3>
-                <p class="mt-2 text-[12px]">
-                    30+ trendy nail art designs.
-                </p>
-            </div>
-            <div class="border border-[#F43985] py-[40px] px-[30px]">
-                <div class="mb-5">
-                    <img src="./assets/icons/speaker.svg" width="35" alt=" brain icon" />
+                <div class="border border-[#F43985] py-[40px] px-[30px]">
+                    <div class="mb-5">
+                        <img src="./assets/icons/speaker.svg" width="35" alt=" brain icon" />
+                    </div>
+                    <h3 class="text-[16px] font-bold uppercase">Social Media Marketing</h3>
+                    <p class="mt-2 text-[14px]">
+                        Learn how to promote yourself and grow your client base online.
+                    </p>
                 </div>
-                <h3 class="text-[14px] font-bold uppercase">Social Media Marketing</h3>
-                <p class="mt-2 text-[12px]">
-                    Learn how to promote yourself and grow your client base online.
-                </p>
             </div>
         </div>
-
-    </div>
+    </section>
 
     <!-- Bonus section -->
 
-    <div class="bg-[#FFF6E6]">
+    <section id="bonuses" class="bg-[#FFF6E6]">
         <div class="px-5 lg:px-[150px] py-10 lg:py-[110px]">
             <div class="text-center">
                 <h2 class="text-[16px] font-[600] mb-2">Special Diwali Offer</h2>
-                <h1 class="text-4xl font-[400] mb-3 abril-fatface-regular">₹4999 <span
+                <h1 class="text-5xl font-[400] mb-3 abril-fatface-regular">₹4999 <span
                         class="abril-fatface-regular font-[400]">+
                         Bonuses</span> <span class="text-[#F43985] font-[400] abril-fatface-regular">Worth
                         ₹10,000</span>
                 </h1>
-                <p class="mb-6 text-[14px]">Enroll now and unlock these amazing bonuses for FREE</p>
+                <p class="mb-8 text-[16px]">Enroll now and unlock these amazing bonuses for FREE</p>
             </div>
             <div class="flex flex-col md:flex-row gap-10 pt-5">
                 <!-- Image Side -->
-                <div class="md:w-1/2 h-1/2">
-                    <img src="https://s3-alpha-sig.figma.com/img/628d/3645/8d75a130d1ffdf81f0c17a182b5160a4?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TSb27WrJ14emsMvggjsIl3kPQo4x0wYSgNglgDTe~M0Q0wbxCOmAe9u7XkabMuyN8hM8oAe5ID~7fKuKnndvod67rFM008miUe0kA5wDhzNzxXw2~7IzISzT69WYWeops8uX4sBh1Ei2lKhYpGCGKofdDYTn0xpN1ipKED54K59gu24ovgxb8ti3Mc-nuG8Xs0dReP6haGxxujd-yVMo30Dq1TXuE35kQjupNEzsAhZZ1EGtpfgF7vp7SVREKN8fbwC3waqA3nDtOi3CLuTwlm8nqxFO9Y5CwwJEQuAKUw-xJjhOWLy8BudCRRxAkLbacrokXOmjBXDb5cfWBB-f~A__"
-                        alt="img" />
+                <div class="md:w-1/2">
+                    <img src="./assets/bonus.png" alt="img" class="w-full h-full" />
                 </div>
 
                 <!-- Content Side -->
                 <div class="md:w-1/2 lg:px-0 px-6">
-                    <div>
-                        <ul class="text-left mb-6 font-[600] text-[14px]">
+                    <div class="flex h-full flex-col justify-between">
+                        <ul class="text-left mb-4 font-[600] text-[14px]">
                             <li class="flex items-start lg:items-center mb-6">
                                 <i class="fas fa-check-circle text-black mr-2 mt-1 lg:mt-0"></i>
                                 Lifetime Access to All Course Videos
@@ -240,14 +234,14 @@
                                 Certificate Recognized by 7
                                 Departments</li>
                         </ul>
-                        <div class="flex flex-row items-start justify-between">
+                        <div class="flex flex-row items-end justify-between relative">
                             <button class="bg-[#F43985] font-[600] px-[22px] py-[12px]">
                                 <div class="flex flex-row items-center gap-[13px]">
-                                    <span class="text-white text-[12px]">Book Now</span>
+                                    <span class="text-white text-[14px]">Book Now</span>
                                     <img src="./assets/icons/btn-arrow.svg" class="w-[13px] h-[9px]" />
                                 </div>
                             </button>
-                            <div>
+                            <div class="absolute right-0 top-0">
                                 <img src="./assets/offer.png" alt="offer" class="w-[80px] lg:w-[160px]" />
                             </div>
                         </div>
@@ -255,25 +249,25 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Testimonial -->
 
-    <div class="px-5 lg:px-[150px] py-10 lg:py-[110px]">
+    <section id="testimonials" class="px-5 lg:px-[150px] py-10 lg:py-[110px]">
         <div class="text-center pb-12">
             <p class="text-[16px] font-[600]">
                 Testimonial
             </p>
-            <h1 class="text-3xl font-[400] mt-2 abril-fatface-regular">
+            <h1 class="text-5xl font-[400] mt-2 abril-fatface-regular">
                 What Our Students Are Saying
             </h1>
         </div>
         <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 justify-center">
-            <div class="bg-[#F3F6F7] p-[40px] flex flex-col gap-[30px]">
+            <div class="bg-[#F3F6F7] p-[40px] flex flex-col gap-[30px] w-auto lg:w-[290px]">
                 <div>
                     <img src="./assets/icons/quote.svg" alt="quote" class="w-[40px]" />
                 </div>
-                <p class="text-[#413D45] text-[14px] font-[500]">
+                <p class="text-[#413D45] text-[16px] font-[500]">
                     "This course changed my career! The makeup techniques I learned are exactly what my bridal clients
                     want."
                 </p>
@@ -290,11 +284,12 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white border border-[#E5E5E5] p-[40px] shadow-m flex flex-col gap-[30px]">
+            <div
+                class="bg-white w-auto lg:w-[290px] border border-[#E5E5E5] p-[40px] shadow-m flex flex-col gap-[30px]">
                 <div>
                     <img src="./assets/icons/quote.svg" alt="quote" class="w-[40px]" />
                 </div>
-                <p class="text-[#413D45] text-[14px] font-[500]">
+                <p class="text-[#413D45] text-[16px] font-[500]">
                     "I’ve added new services to my salon and have already seen more bridal bookings after finishing this
                     course!"
                 </p>
@@ -311,11 +306,11 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-[#F3F6F7] p-[40px] flex flex-col gap-[30px]">
+            <div class="bg-[#F3F6F7] p-[40px] flex w-auto lg:w-[290px] flex-col gap-[30px]">
                 <div>
                     <img src="./assets/icons/quote.svg" alt="quote" class="w-[40px]" />
                 </div>
-                <p class="text-[#413D45] text-[14px] font-[500]">
+                <p class="text-[#413D45] text-[16px] font-[500]">
                     "I never thought I could become a makeup artist. The support and training gave me the confidence to
                     start my own
                     business!"
@@ -334,109 +329,114 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Bridal Masterclass -->
 
-    <div class="bg-[#FFF0F6]">
+    <section id="why-choose-us" class="bg-[#FFF0F6]">
         <div class="px-5 lg:px-[150px] py-10 lg:py-[110px]">
-            <h1 class="text-4xl font-[400] text-[#F43985] abril-fatface-regular">
+            <h1 class="text-5xl font-[400] text-[#F43985] abril-fatface-regular">
                 Why This Bridal Masterclass
             </h1>
-            <h2 class="text-3xl font-[400] text-black mt-2 abril-fatface-regular">
+            <h2 class="text-4xl font-[400] text-black mt-2 abril-fatface-regular">
                 Is Perfect for You
             </h2>
             <div class="flex flex-col md:flex-row gap-[50px]">
                 <div class="md:w-1/2">
                     <img alt="A laptop showing a video call with a woman holding makeup products"
-                        src="./assets/master_makeup.png" width="100%" />
+                        src="./assets/master_makeup.png" width="100%" class="h-full" />
                 </div>
-                <div class="md:w-1/2 flex flex-col justify-between pt-5">
-                    <p class="text-[14px]">
-                        Here's why our students love this course:
-                    </p>
-                    <p class="text-[14px] font-[600]">
-                        Trained 2200+ students in 7 departments, a Team of 10+ professionals, and 10+ years of makeover
-                        industry experience.
-                    </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
-                        <div class="flex flex-col gap-3">
-                            <div
-                                class="p-4 w-[55px] h-[55px] flex items-center justify-center border border-[#F43985] border-opacity-[40%] rounded-md">
-                                <img src="./assets/icons/star.svg" alt="star" />
-                            </div>
-                            <div>
-                                <h3 class="text-[12px] font-[700] mb-2">
-                                    Learn from Experts
-                                </h3>
-                                <p class="text-[12px] font-[500]">
-                                    Our instructors are experienced professionals in the bridal industry.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-3">
-                            <div
-                                class="p-4 w-[55px] h-[55px] flex items-center justify-center border border-[#F43985] border-opacity-[40%] rounded-md">
-                                <img src="./assets/icons/flex.svg" alt="flex" />
-                            </div>
-                            <div>
-                                <h3 class="text-[12px] font-[700] mb-2">
-                                    Flexible Learning
-                                </h3>
-                                <p class="text-[12px] font-[500]">
-                                    Access all course videos for life and learn at your own pace.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-3">
-                            <div
-                                class="p-4 w-[55px] h-[55px] flex items-center justify-center border border-[#F43985] border-opacity-[40%] rounded-md">
-                                <img src="./assets/icons/experience.svg" alt="experience" />
-                            </div>
-                            <div>
-                                <h3 class="text-[12px] font-[700] mb-2">
-                                    Practical Experience </h3>
-                                <p class="text-[12px] font-[500]">
-                                    Hands-on training with a free practice kit through offline live sessions.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-3">
-                            <div
-                                class="p-4 w-[55px] h-[55px] flex items-center justify-center border border-[#F43985] border-opacity-[40%] rounded-md">
-                                <img src="./assets/icons/community.svg" alt="community" />
-                            </div>
-                            <div>
-                                <h3 class="text-[12px] font-[700] mb-2">
-                                    Supportive Community </h3>
-                                <p class="text-[12px] font-[500]">
-                                    Connect with other makeup artists and grow together.
-                                </p>
-                            </div>
-                        </div>
+                <div class="md:w-1/2 flex flex-col">
+                    <div class="pt-10">
+                        <p class="text-[14px] mb-5">
+                            Here's why our students love this course:
+                        </p>
+                        <p class="text-[14px] font-[600]">
+                            Trained 2200+ students in 7 departments, a Team of 10+ professionals, and 10+ years of
+                            makeover
+                            industry experience.
+                        </p>
                     </div>
-                    <div class="mt-5">
-                        <button class="bg-[#F43985] font-[600] px-[22px] py-[12px]">
-                            <div class="flex flex-row items-center gap-[13px]">
-                                <span class="text-white text-[12px]">Book Now</span>
-                                <img src="./assets/icons/btn-arrow.svg" class="w-[13px] h-[9px]" />
+                    <div class="flex flex-col justify-between h-full ">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-12">
+                            <div class="flex flex-col gap-3">
+                                <div
+                                    class="p-[12px] w-[45px] h-[45px] flex items-center justify-center border border-[#F43985] border-opacity-[40%] rounded-md">
+                                    <img src="./assets/icons/star.svg" alt="star" />
+                                </div>
+                                <div>
+                                    <h3 class="text-[14px] font-[700] mb-2">
+                                        Learn from Experts
+                                    </h3>
+                                    <p class="text-[14px] font-[500]">
+                                        Our instructors are experienced professionals in the bridal industry.
+                                    </p>
+                                </div>
                             </div>
-                        </button>
+                            <div class="flex flex-col gap-3">
+                                <div
+                                    class="p-[12px] w-[45px] h-[45px] flex items-center justify-center border border-[#F43985] border-opacity-[40%] rounded-md">
+                                    <img src="./assets/icons/flex.svg" alt="flex" />
+                                </div>
+                                <div>
+                                    <h3 class="text-[14px] font-[700] mb-2">
+                                        Flexible Learning
+                                    </h3>
+                                    <p class="text-[14px] font-[500]">
+                                        Access all course videos for life and learn at your own pace.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <div
+                                    class="p-[12px] w-[45px] h-[45px] flex items-center justify-center border border-[#F43985] border-opacity-[40%] rounded-md">
+                                    <img src="./assets/icons/experience.svg" alt="experience" />
+                                </div>
+                                <div>
+                                    <h3 class="text-[14px] font-[700] mb-2">
+                                        Practical Experience </h3>
+                                    <p class="text-[14px] font-[500]">
+                                        Hands-on training with a free practice kit through offline live sessions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <div
+                                    class="p-[12px] w-[45px] h-[45px] flex items-center justify-center border border-[#F43985] border-opacity-[40%] rounded-md">
+                                    <img src="./assets/icons/community.svg" alt="community" />
+                                </div>
+                                <div>
+                                    <h3 class="text-[14px] font-[700] mb-2">
+                                        Supportive Community </h3>
+                                    <p class="text-[14px] font-[500]">
+                                        Connect with other makeup artists and grow together.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="bg-[#F43985] font-[600] px-[22px] py-[12px]">
+                                <div class="flex flex-row items-center gap-[13px]">
+                                    <span class="text-white text-[14px]">Book Now</span>
+                                    <img src="./assets/icons/btn-arrow.svg" class="w-[13px] h-[9px]" />
+                                </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Our Masterclass -->
 
-    <div class="px-5 lg:px-[150px] pt-10 lg:pt-[110px] text-center">
+    <section id="why-choose-us" class="px-5 lg:px-[150px] pt-10 lg:pt-[110px] text-center">
         <h1 class="text-[16px] font-[600]">Teaser of</h1>
-        <h2 class="text-3xl abril-fatface-regular font-[400] mb-10">Our Masterclass</h2>
+        <h2 class="text-5xl abril-fatface-regular font-[400] mb-10">Our Masterclass</h2>
         <div id="content" class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-10">
             <div class="cursor-pointer">
                 <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
-                    src="./assets/master-1.png" />
+                    src="./assets/master-1.png" onclick="openModal('video1')" />
             </div>
             <div class="cursor-pointer">
                 <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
@@ -450,7 +450,7 @@
 
         <!-- Modal -->
         <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex 
-                    z-[99] items-center justify-center hidden" onclick="closeModal(event)">
+                        z-[99] items-center justify-center hidden" onclick="closeModal(event)">
             <div class="bg-white relative" onclick="event.stopPropagation()">
                 <i class="fas fa-times absolute top-2 right-2 text-2xl cursor-pointer z-[9999] h-[40px] w-[40px] flex items-center justify-center bg-pink-600 text-white rounded-full"
                     onclick="closeModal()"></i>
@@ -464,105 +464,110 @@
                 </video>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Faq Section -->
 
-    <div class="px-5 lg:px-[150px] py-10 lg:py-[110px]">
-        <div class="w-full max-w-4xl mx-auto">
-            <h1 class="text-3xl faq-title text-center mb-8 abril-fatface-regular">Frequently Asked Questions</h1>
-            <div class="border-b border-gray-300 py-4">
-                <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(0)">
-                    <h2 class="text-[14px] font-[700]">When does the course begin?</h2>
-                    <i class="fas fa-times" id="icon-0"></i>
+    <section class="h-screen bg-gray-100" id="faq">
+        <div class="px-5 lg:px-[150px] pt-10 lg:pt-[110px]">
+            <div class="w-full max-w-3xl mx-auto">
+                <h1 class="text-3xl faq-title text-center mb-8 abril-fatface-regular">Frequently Asked Questions</h1>
+                <div class="border-b border-gray-300 py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(0)">
+                        <h2 class="text-[14px] font-[700]">When does the course begin?</h2>
+                        <i class="fas fa-times" id="icon-0"></i>
+                    </div>
+                    <p class="text-[#A2A2A2] mt-2 mb-4 text-[12px] faq-answer open" id="answer-0">The course starts on
+                        November 3, but
+                        you’ll
+                        have
+                        lifetime access to the videos, so you can start anytime!</p>
                 </div>
-                <p class="text-[#A2A2A2] mt-2 mb-4 text-[12px] faq-answer open" id="answer-0">The course starts on
-                    November 3, but
-                    you’ll
-                    have
-                    lifetime access to the videos, so you can start anytime!</p>
-            </div>
-            <div class="border-b border-gray-300 py-4">
-                <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(1)">
-                    <h2 class="text-[14px] font-[700]">How much does the course cost?</h2>
-                    <i class="fas fa-plus" id="icon-1"></i>
+                <div class="border-b border-gray-300 py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(1)">
+                        <h2 class="text-[14px] font-[700]">How much does the course cost?</h2>
+                        <i class="fas fa-plus" id="icon-1"></i>
+                    </div>
+                    <p class="text-[#A2A2A2] mt-2 mb-4 text-[12px] faq-answer" id="answer-1">The course costs $299.</p>
                 </div>
-                <p class="text-[#A2A2A2] mt-2 mb-4 text-[12px] faq-answer" id="answer-1">The course costs $299.</p>
-            </div>
-            <div class="border-b border-gray-300 py-4">
-                <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(2)">
-                    <h2 class="text-[14px] font-[700]">Will I receive a certificate?</h2>
-                    <i class="fas fa-plus" id="icon-2"></i>
+                <div class="border-b border-gray-300 py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(2)">
+                        <h2 class="text-[14px] font-[700]">Will I receive a certificate?</h2>
+                        <i class="fas fa-plus" id="icon-2"></i>
+                    </div>
+                    <p class="text-[#A2A2A2] mt-2 mb-4 text-[12px] faq-answer" id="answer-2">Yes, you will receive a
+                        certificate upon
+                        completion
+                        of the course.</p>
                 </div>
-                <p class="text-[#A2A2A2] mt-2 mb-4 text-[12px] faq-answer" id="answer-2">Yes, you will receive a
-                    certificate upon
-                    completion
-                    of the course.</p>
-            </div>
-            <div class="border-b border-gray-300 py-4">
-                <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(3)">
-                    <h2 class="text-[14px] font-[700]">Is the offline training included in the price?</h2>
-                    <i class="fas fa-plus" id="icon-3"></i>
+                <div class="border-b border-gray-300 py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(3)">
+                        <h2 class="text-[14px] font-[700]">Is the offline training included in the price?</h2>
+                        <i class="fas fa-plus" id="icon-3"></i>
+                    </div>
+                    <p class="text-[#A2A2A2] mt-2 mb-4 text-[12px] faq-answer" id="answer-3">No, the offline training is
+                        not
+                        included in
+                        the
+                        price.</p>
                 </div>
-                <p class="text-[#A2A2A2] mt-2 mb-4 text-[12px] faq-answer" id="answer-3">No, the offline training is not
-                    included in
-                    the
-                    price.</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer Section -->
+
     <div class="text-center pt-10 lg:pt-[20px] px-5 lg:px-[150px] relative z-[9]">
-        <div class="footer-bg py-[60px]">
-            <h1 class="text-3xl text-white font-[400] mb-4 abril-fatface-regular">Ready to Become a Certified Bridal
+        <div class="footer-bg py-[60px] w-full max-w-4xl mx-auto">
+            <h1 class="text-4xl text-white font-[400] mb-4 abril-fatface-regular">Ready to Become a Certified Bridal
                 Artist?<br>Book
                 Your Seat Today!</h1>
-            <p class="mb-6 text-white text-[12px]">Join now and get expert training, lifetime access, and hands-on
+            <p class="mb-6 text-white text-[14px]">Join now and get expert training, lifetime access, and hands-on
                 practice. The
                 journey
                 <br>to becoming a professional bridal artist starts here!
             </p>
             <div class="flex justify-center">
-                <img src="./assets/booknow.png" alt="booknow" class="w-[100px] cursor-pointer">
+                <img src="./assets/booknow.png" alt="booknow" class="w-[130px] cursor-pointer">
             </div>
         </div>
     </div>
 
     <div class="bg-[#F3EFDF]">
         <div class="pb-16 lg:pt-[200px] pt-4 mt-0 lg:mt-[-100px] px-5 lg:px-[150px]">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h2 class="font-[700] text-[12px] mb-5">LINKS</h2>
-                    <ul class="text-[12px] font-[500]">
-                        <li class="mb-2"><a href="#" class="text-black font-medium">Home</a></li>
-                        <li class="mb-2"><a href="#" class="text-black font-medium">Course Overview</a></li>
-                        <li class="mb-2"><a href="#" class="text-black font-medium">Bonuses</a></li>
-                        <li class="mb-2"><a href="#" class="text-black font-medium">Testimonials</a></li>
-                        <li class="mb-2"><a href="#" class="text-black font-medium">Why Choose Us</a></li>
-                        <li class="mb-2"><a href="#" class="text-black font-medium">FAQ</a></li>
+            <div class="flex flex-col lg:flex-row gap-10 justify-between">
+                <div class="w-full lg:w-[17%]">
+                    <h2 class="font-[700] text-[14px] mb-5">LINKS</h2>
+                    <ul class="text-[14px] font-[500]">
+                        <li class="mb-2"><a href="#home" class="text-black font-medium">Home</a></li>
+                        <li class="mb-2"><a href="#course-overview" class="text-black font-medium">Course Overview</a>
+                        </li>
+                        <li class="mb-2"><a href="#bonuses" class="text-black font-medium">Bonuses</a></li>
+                        <li class="mb-2"><a href="#testimonials" class="text-black font-medium">Testimonials</a></li>
+                        <li class="mb-2"><a href="#why-choose-us" class="text-black font-medium">Why Choose Us</a></li>
+                        <li class="mb-2"><a href="#faq" class="text-black font-medium">FAQ</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h2 class="font-[700] text-[12px] mb-5">CONTACT</h2>
+                <div class="w-full lg:w-[30%]">
+                    <h2 class="font-[700] text-[14px] mb-5">CONTACT</h2>
                     <div class="flex flex-col gap-5">
                         <div class="flex flex-row gap-3">
                             <img src="./assets//icons/phone.svg" alt="phone" class="w-2" />
-                            <p class="text-[12px] font-[500]">+91 9999744703</p>
+                            <p class="text-[14px] font-[500]">+91 9999744703</p>
                         </div>
                         <div class="flex flex-row items-start gap-3">
                             <img src="./assets//icons/location.svg" alt="location" class="w-3 mt-1" />
-                            <p class="text-[12px] font-[500]">F-17, Sector-6, Noida, Gautam Buddha Nagar, Uttar Pradesh
+                            <p class="text-[14px] font-[500]">F-17, Sector-6, Noida, Gautam Buddha Nagar, Uttar Pradesh
                                 – 201301</p>
                         </div>
                         <div class="flex flex-row gap-3">
                             <img src="./assets//icons/mail.svg" alt="mail" class="w-3" />
-                            <p class="text-[12px] font-[500]">info@motherorganic.ins</p>
+                            <p class="text-[14px] font-[500]">info@motherorganic.ins</p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h2 class="font-[700] text-[12px] mb-5">SOCIAL MEDIA</h2>
+                <div class="w-full lg:w-[17%]">
+                    <h2 class="font-[700] text-[14px] mb-5">SOCIAL MEDIA</h2>
                     <div class="flex space-x-3">
                         <a href="#">
                             <img src="./assets/icons/instagram.svg" alt="instagram" class="w-8" />
@@ -573,24 +578,16 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="font-[700] text-[12px] mb-5">WHATSAPP INQUIRY</h2>
+                    <h2 class="font-[700] text-[14px] mb-5">WHATSAPP INQUIRY</h2>
                     <div>
-                        <img src="./assets/whatsapp.png" alt="whatsapp" class="w-[120px] cursor-pointer" />
+                        <img src="./assets/whatsapp.png" alt="whatsapp" class="w-[140px] cursor-pointer" />
                     </div>
-                    <!-- <button class="bg-green-500 font-semibold py-2 px-6 rounded-md flex items-center space-x-2">
-                        <i class="fab fa-whatsapp text-white"></i>
-                        <span class="text-white">WhatsApp</span>
-                    </button> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <button class="fixed bottom-4 right-4 bg-pink-500 text-white p-3 rounded-full shadow-md focus:outline-none hidden"
-        id="scroll-to-top">
-        <i class="fas fa-arrow-up text-white">
-        </i>
-    </button>
+
     <script>
         document.getElementById('menu-button').addEventListener('click', function () {
             var menu = document.getElementById('mobile-menu');
@@ -642,6 +639,25 @@
                     anchor.classList.add('active');
                 } else {
                     anchor.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        const navLinks = document.querySelectorAll('nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach((link) => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
                 }
             });
         });
