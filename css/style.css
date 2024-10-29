@@ -74,3 +74,7 @@ button{
 .header-hg{
     height:calc(100vh - 70px);
 }
+
+.textShadow-cl{
+    text-shadow: 1px 3px #00000021;
+}
