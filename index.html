@@ -124,14 +124,40 @@
     </section>
 
     <!-- Our master class -->
-    <section id="home">
-        <div class="pt-10 lg:pt-[110px] text-center px-5 lg:px-[150px]">
-            <h2 class="text-lg font-medium mb-2">What You'll Learn in</h2>
-            <h1 class="text-3xl lg:text-5xl font-[400] abril-fatface-regular">Our Masterclass</h1>
-            <div class="mt-12 cursor-pointer" onclick="openModal('video1')">
-                <img alt="A person in traditional attire with a red curtain background" class="w-full h-auto"
-                    height="400" src="./assets/our_masterclass.png" width="800" />
+    <section id="home" class="px-5 lg:px-[150px] pt-10 lg:pt-[110px] text-center">
+        <h1 class="text-[16px] font-[600]">Teaser of</h1>
+        <h2 class="text-3xl lg:text-5xl abril-fatface-regular font-[400] mb-10">Our Masterclass</h2>
+        <div id="content" class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-10">
+            <div class="cursor-pointer">
+                <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
+                    src="./assets/master-1.png" onclick="openModal('video1')" />
             </div>
+            <div class="cursor-pointer">
+                <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
+                    src="./assets/master-2.png" onclick="openModal('video1')" />
+            </div>
+            <div class="cursor-pointer">
+                <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
+                    src="./assets/master-3.png" onclick="openModal('video2')" />
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex 
+                                z-[99] items-center justify-center hidden" onclick="closeModal(event)">
+            <div class="bg-white relative" onclick="event.stopPropagation()">
+                <i class="fas fa-times absolute top-2 right-2 text-2xl cursor-pointer z-[9999] h-[40px] w-[40px] flex items-center justify-center bg-pink-600 text-white rounded-full"
+                    onclick="closeModal()"></i>
+                <video id="video1" class="hidden" width="640" height="360" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video id="video2" class="hidden" width="640" height="360" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
     </section>
 
     <!-- Professional Makeup -->
@@ -439,44 +465,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Masterclass -->
-
-    <section id="why-choose-us" class="px-5 lg:px-[150px] pt-10 lg:pt-[110px] text-center">
-        <h1 class="text-[16px] font-[600]">Teaser of</h1>
-        <h2 class="text-3xl lg:text-5xl abril-fatface-regular font-[400] mb-10">Our Masterclass</h2>
-        <div id="content" class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-10">
-            <div class="cursor-pointer">
-                <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
-                    src="./assets/master-1.png" onclick="openModal('video1')" />
-            </div>
-            <div class="cursor-pointer">
-                <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
-                    src="./assets/master-2.png" onclick="openModal('video1')" />
-            </div>
-            <div class="cursor-pointer">
-                <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
-                    src="./assets/master-3.png" onclick="openModal('video2')" />
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex 
-                        z-[99] items-center justify-center hidden" onclick="closeModal(event)">
-            <div class="bg-white relative" onclick="event.stopPropagation()">
-                <i class="fas fa-times absolute top-2 right-2 text-2xl cursor-pointer z-[9999] h-[40px] w-[40px] flex items-center justify-center bg-pink-600 text-white rounded-full"
-                    onclick="closeModal()"></i>
-                <video id="video1" class="hidden" width="640" height="360" controls>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video id="video2" class="hidden" width="640" height="360" controls>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
             </div>
         </div>
     </section>
