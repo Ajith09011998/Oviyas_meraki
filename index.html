@@ -138,11 +138,11 @@
             </div>
             <div class="cursor-pointer">
                 <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
-                    src="./assets/master-2.png" onclick="openModal('video1')" />
+                    src="./assets/master-2.png" onclick="openModal('video2')" />
             </div>
             <div class="cursor-pointer">
                 <img alt="Woman in floral dress talking with text '₹18,000 WORTHABLE' overlaid" class="w-full h-auto"
-                    src="./assets/master-3.png" onclick="openModal('video2')" />
+                    src="./assets/master-3.png" onclick="openModal('video3')" />
             </div>
         </div>
 
@@ -150,14 +150,18 @@
         <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex 
                                 z-[99] items-center justify-center hidden" onclick="closeModal(event)">
             <div class="bg-white relative" onclick="event.stopPropagation()">
-                <i class="fas fa-times absolute top-2 right-2 text-2xl cursor-pointer z-[9999] h-[40px] w-[40px] flex items-center justify-center bg-pink-600 text-white rounded-full"
+                <i class="fas fa-times absolute top-2 right-2 text-md cursor-pointer z-[9999] h-[25px] w-[25px] flex items-center justify-center bg-pink-600 text-white rounded-full"
                     onclick="closeModal()"></i>
-                <video id="video1" class="hidden" width="640" height="360" controls>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <video id="video1" class="hidden" width="250" height="100" controls>
+                    <source src="./assets/video/video-1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <video id="video2" class="hidden" width="640" height="360" controls>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <video id="video2" class="hidden" width="250" height="100" controls>
+                    <source src="./assets/video/video-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video id="video3" class="hidden" width="250" height="100" controls>
+                    <source src="./assets/video/video-3.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -492,28 +496,24 @@
                         <h2 class="text-[18px] font-[700]">How much does the course cost?</h2>
                         <i class="fas fa-plus" id="icon-1"></i>
                     </div>
-                    <p class="text-[#A2A2A2] mt-2 text-[15px] faq-answer" id="answer-1">The course costs ₹499.</p>
+                    <p class="text-[#A2A2A2] mt-2 text-[15px] faq-answer" id="answer-1">We have a special Diwali offer
+                        of ₹4999 (original price ₹9999).</p>
                 </div>
                 <div class="border-b border-gray-300 py-8">
                     <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(2)">
                         <h2 class="text-[18px] font-[700]">Will I receive a certificate?</h2>
                         <i class="fas fa-plus" id="icon-2"></i>
                     </div>
-                    <p class="text-[#A2A2A2] mt-2 text-[15px] faq-answer" id="answer-2">Yes, you will receive a
-                        certificate upon
-                        completion
-                        of the course.</p>
+                    <p class="text-[#A2A2A2] mt-2 text-[15px] faq-answer" id="answer-2">Yes, after completing the
+                        course, you’ll get a certificate recognized by 7 .</p>
                 </div>
                 <div class="py-8">
                     <div class="flex justify-between items-center cursor-pointer" onclick="toggleFaq(3)">
                         <h2 class="text-[18px] font-[700]">Is the offline training included in the price?</h2>
                         <i class="fas fa-plus" id="icon-3"></i>
                     </div>
-                    <p class="text-[#A2A2A2] mt-2 text-[15px] faq-answer" id="answer-3">No, the offline training is
-                        not
-                        included in
-                        the
-                        price.</p>
+                    <p class="text-[#A2A2A2] mt-2 text-[15px] faq-answer" id="answer-3">Yes, the 2 days of live training
+                        sessions are included in the ₹4999 fee.</p>
                 </div>
             </div>
         </div>
