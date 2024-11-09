@@ -78,3 +78,9 @@ button{
 .textShadow-cl{
     text-shadow: 1px 3px #00000021;
 }
+
+@media only screen and (max-width:767px){
+    .header-hg{
+    height:auto;
+}
+}
